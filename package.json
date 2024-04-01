@@ -1,21 +1,20 @@
 {
-  "name": "my-react-app",
+  "name": "semantic-search",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://abellaabir.github.io/front_m2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.5"
+    "react-router-dom": "^7.9.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
@@ -30,7 +29,7 @@
     "vite": "npm:rolldown-vite@7.1.14"
   },
   "overrides": {
-    "vite": "npm:rolldown-vite@7.1.14"
+    "homepage": "https://akram-dj.github.io/Search-Engine-using-Semantic-Web/",
+    "deploy": "gh-pages -d build"
   }
 }
-

@@ -15,6 +15,7 @@ export function Home() {
                 <p>This is the Weather page!</p>
                   <a href="/weather">Weather</a>
             </Container>
+            <p> vsmjiopfjoi</p>
             </div>
             
         </div>
