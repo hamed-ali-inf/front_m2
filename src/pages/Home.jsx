@@ -16,6 +16,7 @@ export function Home() {
                   <a href="/weather">Weather</a>
             </Container>
             <p> vsmjiopfjoi</p>
+            <p> test</p>
             </div>
             
         </div>
