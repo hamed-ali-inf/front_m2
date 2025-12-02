@@ -1,0 +1,30 @@
+.authentication-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}   
+.authentication-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+.authentication-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.authentication-form button:hover {
+  background-color: #45a049;
+}
+.authentication-form .error {
+  color: red;
+  margin-bottom: 10px;
+}
+.authentication-form .success {
+  color: green;
+  margin-bottom: 10px;
+}
