@@ -6,17 +6,11 @@ import { News } from "./pages/News";
 import { History } from "./pages/History";
 import { Authentication } from "./pages/authentication";
 import { Rest } from "./pages/Rest";
-import { Register } from "./pages/Register";
-import { Login } from "./pages/Login";
-
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/front_m2">
       <nav>
-        {/* هنا ممكن تضيف روابط للتنقل */}
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/login">Login</Link> |{" "}
-        <Link to="/register">Register</Link>
+      
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,9 +19,6 @@ export default function App() {
         <Route path="/history" element={<History />} />
         <Route path="/auth" element={<Authentication />} />
         <Route path="/rest" element={<Rest />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-
       </Routes>
     </BrowserRouter>
   );
