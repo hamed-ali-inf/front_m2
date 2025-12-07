@@ -12,7 +12,14 @@ export function AuthenticationForm() {
             </div>
             <button type="submit">Login</button>
             <br />
-            <button type="button">Register</button>
+             <button 
+                type="button" 
+                onClick={() => navigate('/register')}
+                
+            >
+                <a href="/register">Register</a>
+            </button>
+            
             <a href="/rest">Forgot Password?</a>
         </form>
     );
