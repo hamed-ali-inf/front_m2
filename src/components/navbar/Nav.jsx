@@ -10,7 +10,7 @@ export function Nav() {
             <span>Search</span>
         </div>
         <div className="nav-links">
-            <a href="/auth">Login</a>
+            <a href="/login">Login</a>
             <a href="/history">History</a>
           
         </div>
