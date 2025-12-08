@@ -1,5 +1,5 @@
 import React from "react";
-import "./Loginpage.css";   // تأكد أن ملف CSS موجود بنفس المجلد
+import "./Loginpage.css";   
 import { useNavigate } from "react-router-dom";
 
 export default function Loginpage() {
@@ -10,7 +10,7 @@ export default function Loginpage() {
       <div className="card">
         <header className="card-top">
           <div className="search-brand">
-            {/* أيقونة العدسة */}
+            
             <svg className="magnifier" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M21 21l-4.35-4.35"
