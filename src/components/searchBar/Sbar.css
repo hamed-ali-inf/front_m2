@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     .search-bar {
       display: flex;
       align-items: center;
@@ -7,3 +8,14 @@
       border-radius: 4px;
       padding: 8px 12px; 
     }
+=======
+    .search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 8px 12px; 
+    }
+>>>>>>> df13238cbf2b759a6e59728782001429cfa880c2
