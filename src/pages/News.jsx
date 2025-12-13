@@ -1,4 +1,3 @@
-
 import { Link, useParams } from "react-router-dom";
 
 export function News() {
@@ -130,4 +129,5 @@ export function News() {
         </div>
       </div>
     </>
-  )};
+  );
+}

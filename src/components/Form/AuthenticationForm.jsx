@@ -1,5 +1,5 @@
 import './AuthenticationForm.css'
-export function AuthenticationForm() {
+export  function AuthenticationForm() {
     return (
         <form className="authentication-form">
             <div>

@@ -1,4 +1,3 @@
-
 import { ResetForm } from "../components/Form/ResetForm";
 export function Rest() {
     return (
@@ -7,4 +6,3 @@ export function Rest() {
         </div>
     );
 }
-
