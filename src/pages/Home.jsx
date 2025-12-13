@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // For navigation
-import { Sbar } from "../components/searchBar/Sbar";
-import { Nav } from "../components/navbar/Nav";
-import { Container } from "../components/Container/Container";
+import { useNavigate } from "react-router-dom";
 
 export function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -10,12 +7,16 @@ export function Home() {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    alert(`Search initiated for: ${searchQuery}`);
-    // TODO: Replace with real search logic (e.g., API call)
+    if (searchQuery.trim() === "") {
+      alert("Please enter a search query.");
+      return;
+    }
+    // Directly navigate to TECH NEWS! page - NO popup!
+    navigate("/search-results");
   };
 
   const handleReadMore = (newsId) => {
-    navigate(`/news/${newsId}`); // Navigate to the full article for this news ID
+    navigate(`/news/${newsId}`);
   };
 
   const handleWeatherSeeMore = () => {
@@ -27,7 +28,6 @@ export function Home() {
       background: "linear-gradient(135deg, #70a1ff 0%, #4a6dfc 50%, #2f4a9f 100%)",
       fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       color: "#23232f",
-      
     },
     header: {
       padding: "18px 24px",
@@ -285,7 +285,6 @@ export function Home() {
             <button style={styles.headerBtn} onClick={() => navigate("/history")}>
               History
             </button>
-            {/* Add more buttons as needed */}
           </div>
         </div>
         <form style={styles.searchForm} onSubmit={handleSearch}>
@@ -358,7 +357,6 @@ export function Home() {
               <div>Location</div>
               <div>tindouf</div>
             </div>
-            {/* Add more details if available */}
           </div>
           <button style={styles.seeMoreBtn} onClick={handleWeatherSeeMore}>
             See More

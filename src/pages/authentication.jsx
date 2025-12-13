@@ -1,4 +1,3 @@
-
 import { AuthenticationForm } from "../components/Form/AuthenticationForm";
 export function Authentication() {
     return (
@@ -7,4 +6,3 @@ export function Authentication() {
         </div>
     );
 }
-

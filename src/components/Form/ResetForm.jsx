@@ -1,4 +1,3 @@
-
 import "./ResetForm.css";
 export function ResetForm() {   
     return (
@@ -11,4 +10,3 @@ export function ResetForm() {
         </form>
     );
 }
-
