@@ -18,6 +18,7 @@ export function RegisterPage() {
             Login
           </Link>
         </p>
+         <Link to="/" className="btn-back">Back to Home</Link>
       </div>
     </div>
   );
