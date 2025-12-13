@@ -1,0 +1,231 @@
+:root {
+  --bg: #eaf6ff;
+  --card-bg: #ffffff;
+  --light-blue: #9fe0ff;
+  --blue-start: #6fd0ff;
+  --blue-end: #0b88ff;
+  --muted: #8b8b8b;
+  --shadow: rgba(12, 52, 86, 0.12);
+  --soft-shadow: rgba(12, 52, 86, 0.08);
+  --radius: 18px;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f6fbff 0%, #e6f6ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Screen / mobile frame */
+.screen {
+  width: 360px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* Top card with rounded corners and layered look */
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(255, 255, 255, 0.98)
+  );
+  border-radius: 26px;
+  padding: 18px;
+  box-shadow: 0 10px 24px var(--shadow);
+  overflow: visible;
+}
+
+/* Top header (Search brand + tabs) */
+.card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* Icon + title */
+.search-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.magnifier {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(180deg, var(--light-blue), var(--blue-start));
+  padding: 8px;
+  border-radius: 10px;
+  color: #04263a;
+  flex: 0 0 44px;
+  box-shadow: 0 6px 12px var(--soft-shadow);
+}
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b3b57;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 12px;
+  align-self: stretch;
+  margin-top: -4px;
+}
+.tab {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(180deg, rgba(11, 136, 255, 0.05), rgba(11, 136, 255, 0.02));
+  box-shadow: 0 6px 10px rgba(11, 88, 170, 0.04) inset;
+  font-weight: 600;
+  color: #0b3b57;
+  cursor: pointer;
+}
+.tab.active {
+  background: linear-gradient(180deg, #d8f4ff, #c3ecff);
+  box-shadow: 0 6px 12px rgba(6, 88, 160, 0.08);
+}
+
+/* Form inputs styled as floating, big rounded cards */
+.form {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.input-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 12px 18px var(--soft-shadow);
+  position: relative;
+  display: block;
+}
+.input-card input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  background: transparent;
+  padding: 0;
+  height: 28px;
+}
+
+/* placeholder text that sits inside the 'card' like in image */
+.placeholder {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  transform: translateY(0);
+  color: #9b9b9b;
+  pointer-events: none;
+  font-size: 15px;
+}
+
+/* small "forgot" link aligned to right */
+.forgot {
+  color: #6aa8d9;
+  text-align: right;
+  font-size: 14px;
+  margin-top: -6px;
+  margin-right: 4px;
+}
+
+/* Footer area with gradient button */
+.footer {
+  border-radius: 20px;
+  padding: 20px;
+  background: linear-gradient(180deg, #dff3ff 0%, #cfeeff 100%);
+  box-shadow: 0 10px 30px rgba(5, 80, 150, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Big rounded gradient login button */
+.login-btn {
+  width: 86%;
+  max-width: 320px;
+  padding: 14px 18px;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--blue-start), var(--blue-end));
+  color: #001b2b;
+  box-shadow: 0 8px 18px rgba(11, 136, 255, 0.22);
+}
+
+/* Home button */
+.home-btn {
+  width: 86%;
+  max-width: 320px;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(230, 245, 255, 0.9)
+  );
+  color: #0b3b57;
+  box-shadow: 0 6px 14px rgba(12, 52, 86, 0.12), inset 0 2px 6px rgba(255, 255, 255, 0.8);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.home-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(12, 52, 86, 0.18), inset 0 2px 6px rgba(255, 255, 255, 0.9);
+}
+.home-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(12, 52, 86, 0.15);
+}
+
+/* bottom sign up line */
+.signup-line {
+  font-size: 14px;
+  color: #13333f;
+}
+.signup-line a {
+  color: #0b88ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* responsive tweaks */
+@media (max-width: 380px) {
+  .screen {
+    width: 340px;
+  }
+  .login-btn,
+  .home-btn {
+    width: 90%;
+  }
+}
