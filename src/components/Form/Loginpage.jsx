@@ -70,6 +70,12 @@ export default function Loginpage() {
         >
           Login
         </button>
+         <button 
+              className="tab" 
+              onClick={() => navigate("/home")}
+            >
+              Back to home
+            </button>
         <div className="signup-line">
           Don't have an account?{" "}
           <span 
